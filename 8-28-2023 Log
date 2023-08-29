@@ -1,0 +1,8 @@
+Today I continued working on going through the Unreal Engine tutorial on building a 3rd-person character from scratch. I started by fixing an issue with the over-the-shoulder camera, where when it was shifted it would 
+snap into place in a really ugly manner before switching. What I ended up finding is that when I had put the camera into place behind the player character, I had moved the camera independently of the spring arm, 
+meaning the adjustments I was making to the camera were on the wrong coordinate plane, so when I moved the camera from xpos 45 to -45, it would snap into place before moving. I fixed this by moving the actual spring 
+arm into place and then adjusting its position.
+
+I then followed the tutorial on adding animations to my character’s movement. Of particular interest is the leaning animation that is supposed to happen when the player moves side-to-side. To determine the direction 
+the character was to lean, I built a new function called CalcLean that would grab the player’s current Yaw value in their rotation and compare it to their previous one. Then it takes that value and uses it to determine
+how far to lean the character.
