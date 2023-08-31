@@ -1,1 +1,9 @@
+Over the past couple of days I have continued focusing on learning Unreal Engine. I started by finishing the tutorial I was watching on how to make a basic 3rd person character. 
+This saw me learning about a variety of things, such as adding components to assemble a character, using Unreal’s Enhanced Movement subsystem to make the character move, adding inputs and then defining them in blueprints, and even learned a little about how to set up animations. 
 
+After finishing that tutorial I followed another about how to make a character shoot a projectile. From this I learned that Unreal has a built in system for making projectiles, and most features could be defined in the details menu. I then learned how to make it so when I pressed left-click, the projectile would shoot, learning a little blueprint logic along the way. 
+
+After doing both of these I sort of tested myself by trying to make a 3rd-person character that could shoot without using tutorials as much as possible. The idea here being that going through 
+the process on my own would cement it in my brain and allow me to fill any gaps. For example; I forgot how to enable the Enhanced Movement subsystem for my character within Blueprints, something that I now have down as a result of this “test”. 
+
+I also spent time on more managerial tasks, such as setting up a GitHub repository. This saw me spending time reading about Git and GitHub to learn the basics about how they work. I created the repository (with some help from Mr. Compton) and then added the project files to it. Currently I have requested that my team give me their GitHub usernames so I can add them to the project. 
