@@ -1,0 +1,3 @@
+Today I finished implementing a basic projectile system in my prototype. There was a bug before where the first time the projectile spawned, it would spawn at (0,0) instead of where I put the spawn position on my character. I managed to fix this by taking the bullet spawn logic off of my player controller and putting most of the spawn logic in my character blueprint. From there, I was able to properly update my spawn position and rotation to get the bullets working how I wanted. 
+
+Next, I started working on implementing a simple 3D actor that functions as a button, so when pressed it fires a projectile. My current issue is with figuring out how touch/click input works as I’m not sure how touch/click events are generated yet. 
