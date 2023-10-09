@@ -1,0 +1,8 @@
+Over the past week I was of course working on the game jam. During that process I learned about post-process effects in Unreal, utilizing inheritance to make work easier, and just general experience with the engine and troubleshooting bugs.
+
+I also learned alot about how the development cycle works, from creating a game to finishing it. Me and my team learned a lot as our roles became a lot more defined through the development process. 
+
+
+As for after jam stuff, today I focused on refocusing on developing Tiny Titans. I discussed with the team art direction, coming to the conclusion that controls will the 3D assets, almost like being inside the mech. Health is primarily going to 
+be shown using visuals queues such as how the mech looks, as opposed to something like a health bar. We determined which maps we're exactly going to be making as well. Cameron and Keon are going to work on a general design for the mechs so we
+can keep that consistent. The focus now is to build a functioning game before working on stuff like the garage. 
