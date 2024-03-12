@@ -1,0 +1,11 @@
+This log is primarily concerned with the Idyll (not) game jam that we did over the past week. For the jam, I ended up teaming with Marvin, Eli, and Calloway. We started by discussing our project and deciding to make a simulator where you are a velvet worm. I was the sole programmer on this project, so I was concerned with it getting out of the scope of what my abilities were. 
+
+The first thing that I did was set up a third person template and started modifying the default character to better suit our needs. I also set up a simple projectile ability to simulate the real life velvet worm’s ability to shoot a goo-like substance to capture prey. 
+
+I wanted to have the projectiles act in a certain way, sticking to surfaces in a realistic fashion and gradually building up on the beetles that you hunted. I followed a tutorial that walks through making a gloo gun from the video game Prey in order to accomplish this. One thing I learned about was normals. In order to get the gloo to stick to surfaces in a believable way, I grab the normal value of the object we are sticking on and use that to make the gloo face that direction. 
+
+I also ended up learning about animation blueprints and how to actually implement animations into games. This was a fun experience. I also was encouraged to dig a little deeper and find a way to make the worm move in a worm-like fashion. To do this, I ended up finding the transform of the head while the worm was walking and put it into an array. I would then take this array and pass it to the animation blueprint. Using a node called “Transform (modify) bone” (which kind of sucks btw) I could use these transforms to set the body of the worm to those locations, simulating the movement of a worm. It’s a little buggy, but I’m fine with the result.
+
+I also actually managed to make a functional, simple, AI. It turns out that some issue was arising with the blackboard keys not properly updating. With the aid of Mr. Compton, I managed to find a solution that worked properly. This felt like a small redemption for my misadventure with behavior trees during the previous game jam.
+
+I also ended up playing with widgets a little bit by adding a simple title screen. This is unfortunately only in the Windows build for now, though I do have a build for Macintosh. 
