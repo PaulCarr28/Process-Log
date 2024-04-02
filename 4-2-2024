@@ -1,0 +1,9 @@
+Since the last log entry, a new team was started with the old Titans team to instead work on a tower defense game. 
+
+My first goal was to implement our grid system in the game. I did this using some simple math provided to me by Mr. Compton to adjust placeable items' position in the world. We just take the current position of the actor, divide it by our grid size, round that value, and then multiply the new truncated value by our grid size. 
+
+Next, I worked on refining some of the systems that Dylan had put into place. He took the initative and implemented our basic shop and placing mechanics. The first thing I wanted to do was make sure that players could not place one tower on top of another. I started by just creating a new sphere collision component to detect whether or not towers were overlapping. I did this instead of using the mesh because the artists were having some variation in base sizes and I wanted to work around that, though I probably should have just brought the issue up to them. Once an overlap was detected, I used an edited material I made that was red to communicate to the player that there was a conflict (this behavior was done in communication with Eli to ensure that it was what he wanted). 
+
+Due to the nature of how artists create and animate their towers, there wasn't just one mesh I could change the material of, so I bascially used a simple for loop to get all components that are static meshes and change their material. This si causing some issues, so I'll probably have to work with art to create a standardized way of setting up these towers. 
+
+I also reworked some things in our shop to make it so we can spawn more than one type of tower. I worked on getting towers to attack enemies and actually get our game functioning as well. 
