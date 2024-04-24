@@ -1,0 +1,11 @@
+If I am being completely honest with myself, I feel as if the last two weeks haven’t been my most productive. 
+
+Overall though, there has been some progress since my last blog post. Our towers now shoot at enemies and even have a nice looking Niagara effect that shows this, courtesy of Nash. I worked with art to provide a way to make 2x2 towers fit in the grid, as before they were taking up nine grid spaces as opposed to just 4, due to being placed in the center of a grid space, instead of in a manner that fits larger towers in. I basically made a size variable (set manually… not my favorite thing in the world) and using modulus to determine whether it is an odd or even size, we add an offset equal to about half a grid space. This correctly places the tower.
+
+A win condition was also added, meaning that the basic skeleton of the game is almost ready. Basically, we just check that the player is still alive, that all enemies are dead, and that the enemy spawner is out of enemies to spawn. Once all conditions are satisfied, we end the game (print out a string saying you won… need an actual UI). 
+
+Fixed an issue where the player base(?) takes damage from all overlapping actors, instead of just enemies. 
+
+Fixed an issue where certain manipulation of the mouse would result in towers being able to be placed on objects tagged “bad land”. Moved the detector of this tag from the mouse hit result to the objects that the towers are overlapping. 
+
+Worked on implementing our support towers. I’m going to be honest, the code for this is terrible. Basically, we store a struct of what modifiers to three stats we are applying (damage, range, fire rate). Each tower has a struct of applied effects. It also has an array of every effect being applied to it (to facilitate stacking of effects). Then, we make a “composite” effect by looping through the array and adding all of the values. This sucks. I hate this. It’s a terribly convoluted mess that I do not know how to do better. 
